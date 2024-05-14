@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Color Scheme generator</title>
+</head>
+<body>
+    <video autoplay muted loop id="header-video">
+        <source src="/images/smokeyHeaderBg2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+    </video>
+    <header>
+        <div class="header-logo">
+            <h1>Color Scheme Generator</h1>
+        </div>
+        <hr />
+        <div class="selectors">
+            <label for="colorInput">Select your color</label>
+            <input id="colorInput" type="color">
+            <label for="schemeSelect">Select your scheme</label>
+                <select id="schemeSelect">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome (Dark)</option>
+                    <option value="monochrome-light">Monochrome (Light)</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+              <button id="submit-btn">Get Color Scheme</button>
+        </div>
+    </header>
+    <main id="main-color-drop">
+        
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
